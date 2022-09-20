@@ -17,6 +17,10 @@
 const { defineConfig, loadEnv } = require('vite');
 const path = require('path');
 
+function pathResolve(dir) {
+  return resolve(__dirname, ".", dir);
+}
+
 import utools from 'vite-plugin-utools';
 
 const viteBaseConfig = require('./config/vite.base.config');
