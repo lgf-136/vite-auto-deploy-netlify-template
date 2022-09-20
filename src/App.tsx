@@ -16,6 +16,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React + Github Actions + Netlify</h1>
+      <a href="https://github.com/lgf-136/vite-auto-deploy-netlify-template">open github</a>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
