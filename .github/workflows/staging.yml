@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - staging
+    paths-ignore:
+      - 'dist/upx/**'
 
 jobs:
   deploy:
@@ -27,8 +29,6 @@ jobs:
         env:
           NETLIFY_SITE_ID: ${{ secrets.STAGING_NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          
-          
 # Webpack reference
 # name: NodeJS with vite
 
