@@ -15,7 +15,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React + Github Actions + Netlify</h1>
+      <h1>Vite + React + GitHub Actions + Netlify</h1>
       <a href="https://github.com/lgf-136/vite-auto-deploy-netlify-template">open github</a>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
