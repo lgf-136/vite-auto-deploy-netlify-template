@@ -13,7 +13,7 @@
 
 /** @type import('vite).UserConfig */
 
-module.exports = (env: any) => {
+module.exports = (env) => {
   return {
     base: env.VITE_BASE,
     server: {
