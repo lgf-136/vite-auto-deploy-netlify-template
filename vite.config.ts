@@ -18,14 +18,14 @@ const { defineConfig, loadEnv } = require('vite');
 const path = require('path');
 
 function pathResolve(dir) {
-  return resolve(__dirname, ".", dir);
+  return path.resolve(__dirname, '.', dir);
 }
 
 import utools from 'vite-plugin-utools';
 
-const viteBaseConfig = require('./config/vite.base.config');
-const viteServeConfig = require('./config/vite.serve.config');
-const viteBuildConfig = require('./config/vite.build.config');
+const viteBaseConfig = require(pathResolve('config/vite.base.config.ts'));
+const viteServeConfig = require(pathResolve('config/vite.serve.config.ts'));
+const viteBuildConfig = require(pathResolve('config/vite.build.config.ts'));
 
 // 使用策略模式来加载不同的配置文件
 const configResover: { [key: string]: Function } = {
